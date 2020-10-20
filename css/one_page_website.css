@@ -1,0 +1,44 @@
+/*------------------------------
+Basic styles
+-------------------------------*/
+body {
+    font-size: 16px;
+    font-family: "Merienda", 'Gothic', Arial, sans-serif ;
+    color: navy;  
+}
+
+.information h2 span {
+    font-size: 18px;
+    color: navy;
+}
+.information form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 700;
+    color: navy;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid navy;
+    margin: 2% auto;
+    border-radius: 10px;
+    background: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Merienda', sans-serif;
+}
+
+.information input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 700;
+    color: navy;
+    padding: 2%;
+    width: 40%;
+    border-top: 1px solid lightblue;
+    border-right: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    border-left: 1px solid lightblue;
+    margin: 12px 2em;
+    border-radius: 10px;
+    background: lightblue;
+    box-shadow: : inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Merienda', sans-serif;
+}
