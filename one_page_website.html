@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Travel to the Philippines</title>
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./js/one_page_website.js" defer></script>
 	</head>
 	<body>
 		<!-- NAV -->
@@ -19,140 +21,125 @@
 		<!-- END NAV -->
 				
 		<!-- HOME -->
-		<div id="home">
-			<div>
-				<div>	
-					<span>Travel to the gorgeous Philippine Islands!<span>
-				</div>
-			</div>
+		<div id="home"></div>	
+			<span>Travel to the gorgeous Philippine Islands!<span>
 		</div>
 		<!-- END HOME -->
 		
 		<!-- VIDEO -->
 		<div>
-			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/1NR4PJqxAEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1NR4PJqxAEE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>	
-		<!-- END VIDEO -->
-		
-		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
-				<h1>Gallery</h1>
-				<div>
 			
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/pic1.jpg" alt="Camotes Islands">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/pic2.jpg" alt="Kawasan Falls">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/pic3.jpg" alt="Palawan Island">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/pic4.jpg" alt="Oslob Whale Sharks">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/pic5.jpg" alt="Cebu City">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/pic6.jpg" alt="Bohol Chocolate Hills">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./images/pic7.jpg" alt="Luzon Beach">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-					
-					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./images/pic8.jpg" alt="Leyte">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 8 -->
-					
-					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
-							<img src="./images/pic9.jpg" alt="Cave">
-							<div>
-								<h3>Click to Enlarge</h3>
-								<p>With so many islands to visit and explore, the fun never ends. Book your trip today!</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 9 -->
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+				<img src="./images/pic1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			</div>
+			<div class="column">
+				<img src="./images/pic9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			</div>
+		</div>
+
+	
+		<!-- The Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext"> 1 / 9</div>
+					<img src="./images/img1_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 2 / 9</div>
+					<img src="./images/img2_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 3 / 9</div>
+					<img src="./images/img3_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 4 / 9</div>
+					<img src="./images/img4_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 5 / 9</div>
+					<img src="./images/img5_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 6 / 9</div>
+					<img src="./images/img6_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 7 / 9</div>
+					<img src="./images/img7_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 8 / 9</div>
+					<img src="./images/img8_wide.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext"> 9 / 9</div>
+					<img src="./images/img9_wide.jpg" style="width:100%">
+				</div>
+
+				<!-- Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!-- Thimbnail image controls-->
+				<div class="column">
+					<img class="demo" src="./images/pic1.jpg" onclick="currentSlide(1)"" alt="Camotes Islands">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic2.jpg" onclick="currentSlide(2)"" alt="Kawasan Falls">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic3.jpg" onclick="currentSlide(3)"" alt="Palawan Island">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic4.jpg" onclick="currentSlide(4)"" alt="Oslob">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic5.jpg" onclick="currentSlide(5)"" alt="Cebu City">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic6.jpg" onclick="currentSlide(6)"" alt="Bohol Island">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic7.jpg" onclick="currentSlide(7)"" alt="Luzon">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic8.jpg" onclick="currentSlide(8)"" alt="Leyte Islands">
+				</div>
+				<div class="column">
+					<img class="demo" src="./images/pic9.jpg" onclick="currentSlide(9)"" alt="Caves">
 				</div>
 			</div>
-		</section>
-		<!-- END GALLERY -->
+		</div>
+					
+		
 		
 		<!-- CONTACT FOR INFO -->
 		<section id="contact">
